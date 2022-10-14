@@ -68,13 +68,13 @@ class SearchEngine {
 } 
 ```
 When the server is created, the first part (the if statement) of the *handleRequest()* method is called. Because there is no other path following the domain, the path is empty and the code will display the following:
-![](2-A-SERVER-CREATED.png)
+![](2-A-SERVER-CREATED.png) 
 
-Let's add a string into the query. In our URL, we will go to the path called "add" and then call a query of s=onto. This will call upon the second portion of the *handleRequest()* method (else if statement), which will add the queried string into the list and print out the following statement.
+Let's add a string into the query. In our URL, we will go to the path called "add" and then call a query of s=onto. This will call upon the second portion of the *handleRequest()* method (else if statement), which will add the queried string into the list and print out the following statement. \
 ![](2-B-ADD-QUERY.png)
 
 In the following screenshot, we have already added a couple of strings to the list. If we want to search for all the strings in the list that have an "a", we can call the search path and pass the query of s=a and it will spit out a list of all the words with "a" separated by commas:
-![](2-C-SEARCH-QUERY.png)
+![](2-C-SEARCH-QUERY.png) \
 It is worth noting that if either of these paths do not contain a query, the website will spit out "Missing Query!". 
 
 ## Part 2: Finding Bugs
