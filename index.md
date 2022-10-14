@@ -6,3 +6,6 @@ Link to [_lab-report-1-week-0.md_](https://wachacoso.github.io/cse15l-lab-report
 
 **Week 1 Assignment:** \
 Link to [_lab-report-week-1.md_](https://wachacoso.github.io/cse15l-lab-reports/Lab-1/lab-report-week-1)
+
+**Week 3 Assignment:** \
+Link to [_lab-report-week-3.md_](https://wachacoso.github.io/cse15l-lab-reports/Lab-3/lab-report-week-3)
