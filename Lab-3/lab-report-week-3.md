@@ -67,13 +67,13 @@ class SearchEngine {
     }
 } 
 ```
-When the server is created, the first part (the if statement) of the *handleRequest()* method is called. Because there is no other path following the domain, the path is empty and the code will display the following:
+When the server is created, the first part (the if statement) of the *handleRequest()* method is called. A new empty ArrayList called "list" is formed. There is no path listed in the URL, fulfilling the first if statement and returning the following message:
 ![](2-A-SERVER-CREATED.png) 
 
-Let's add a string into the query. In our URL, we will go to the path called "add" and then call a query of s=onto. This will call upon the second portion of the *handleRequest()* method (else if statement), which will add the queried string into the list and print out the following statement. \
+Let's add a string into the query. We now will add a path called "/add," which will direct us to the first else if statement, as it will recognize that path. Our query is called through use of the "?," and writing "s=onto" allows the program to recognize a String query being passed. Our program will then obtain the string following the equal sign, "onto," add the string to the list, and spit out the following message. \
 ![](2-B-ADD-QUERY.png)
 
-In the following screenshot, we have already added a couple of strings to the list. If we want to search for all the strings in the list that have an "a", we can call the search path and pass the query of s=a and it will spit out a list of all the words with "a" separated by commas:
+In the following screenshot, we have added the strings "apple", "artichoke", and "an" to the list that also contains "onto". If we want to search for all the strings in the list that have an "a", we can call "/search", which will recognize the search path and fulfill the second else if statement. Our recognized string/query is now "a", and since the search path was called, the program will iterate through the list and generate a new list ("searched") containing all the strings with "a". This list will then be printed out separated by commas as follows:
 ![](2-C-SEARCH-QUERY.png) \
 It is worth noting that if either of these paths do not contain a query, the website will spit out "Missing Query!". 
 
